@@ -1,0 +1,321 @@
+/* Genel App Stilleri */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #5b21b6;
+}
+
+.main-page-link {
+    text-decoration: none;
+    color: #5b21b6;
+    font-weight: bold;
+}
+
+.app-main {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Home Sayfası */
+.home-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-content {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.top-bar {
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.search-box {
+    flex-grow: 1;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.filters-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.filters-container select {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.btn-reset {
+    padding: 0.7rem 1rem;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 3rem;
+}
+
+.message.error {
+    color: #d32f2f;
+}
+
+/* TVList & TVCard */
+.tv-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.tv-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.tv-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tv-card-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.tv-card-info h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.tv-card-info .summary {
+    font-size: 0.9rem;
+    color: #555;
+    flex-grow: 1;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag.rating {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.card-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-detail {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn-add {
+  background-color: #f59e0b;
+  color: #fff;
+}
+
+/* Watchlist Panel */
+.watchlist-panel {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.watchlist-panel h4 {
+    margin-top: 0;
+}
+
+.watchlist-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.watchlist-items li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.watchlist-items img {
+    width: 40px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.btn-remove {
+    margin-left: auto;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-clear {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #6b7280;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.pagination button {
+  background-color: #f59e0b;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+/* Detay Sayfası */
+.show-detail-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: #5b21b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.detail-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.detail-header img {
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.summary-detail {
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+.episode-list {
+    list-style: none;
+    padding: 0;
+}
+
+.episode-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    border-bottom: 1px solid #eee;
+}
+
+.episode-list li:nth-child(even) {
+    background-color: #f9f9f9;
+}
